@@ -66,6 +66,10 @@ public abstract class ExoPlayback<T extends Player> implements EventListener, Me
 
     public abstract void removeUpcomingTracks();
 
+    public void setRepeatMode(@Player.RepeatMode int repeatMode) {
+        player.setRepeatMode(repeatMode);
+    }
+
     public void updateTrack(int index, Track track) {
         int currentIndex = player.getCurrentWindowIndex();
 

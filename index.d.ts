@@ -38,6 +38,7 @@ declare namespace RNTrackPlayer {
   type RatingType = string | number;
   type Capability = string | number;
   type PitchAlgorithm = string | number;
+  type RepeatMode = number;
 
   type EventHandler = (type: EventType, ...args: any[]) => void;
   export function registerEventHandler(handler: EventHandler): void;
@@ -200,5 +201,9 @@ declare namespace RNTrackPlayer {
   export const PITCH_ALGORITHM_LINEAR: PitchAlgorithm;
   export const PITCH_ALGORITHM_MUSIC: PitchAlgorithm;
   export const PITCH_ALGORITHM_VOICE: PitchAlgorithm;
+
+  export const REPEAT_MODE_OFF: RepeatMode;
+  export const REPEAT_MODE_ONE: RepeatMode;
+  export const REPEAT_MODE_ALL: RepeatMode;
 
 }
