@@ -7,6 +7,7 @@ DerivedData/
 package-lock.json
 yarn.lock
 .idea/
+.vscode/
 
 # Android
 
