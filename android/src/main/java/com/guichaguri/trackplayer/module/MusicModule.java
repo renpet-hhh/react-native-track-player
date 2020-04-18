@@ -297,7 +297,7 @@ public class MusicModule extends ReactContextBaseJavaModule implements ServiceCo
     }
 
     @ReactMethod
-    public void setRepeatMode(final Integer repeatMode, final Promise callback) {
+    public void setRepeatMode(int repeatMode, final Promise callback) {
         waitForConnection(() -> {
             binder.getPlayback().setRepeatMode(repeatMode);
             callback.resolve(null);
